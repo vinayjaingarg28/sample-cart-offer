@@ -11,5 +11,57 @@
         "body" : "{\"segment\": \"p1\"}",
         "statusCode": 200
       }
+    },
+  {
+    "httpRequest" : {
+      "method" : "GET",
+      "path" : "/api/v1/user_segment",
+      "queryStringParameters" : {
+        "user_id" : ["2"]
+      }
+    },
+    "httpResponse" : {
+      "body" : "{\"segment\": \"p2\"}",
+      "statusCode": 200
     }
+  },
+  {
+    "httpRequest" : {
+      "method" : "GET",
+      "path" : "/api/v1/user_segment",
+      "queryStringParameters" : {
+        "user_id" : ["3"]
+      }
+    },
+    "httpResponse" : {
+      "body" : "{\"segment\": \"p3\"}",
+      "statusCode": 200
+    }
+  },
+  {
+    "httpRequest" : {
+      "method" : "GET",
+      "path" : "/api/v1/user_segment",
+      "queryStringParameters" : {
+        "user_id" : ["4"]
+      }
+    },
+    "httpResponse" : {
+      "body" : "{\"segment\": \"p1\"}",
+      "statusCode": 200
+    }
+  },
+  {
+    "httpRequest" : {
+      "method" : "GET",
+      "path" : "/api/v1/user_segment",
+      "queryStringParameters" : {
+        "user_id" : ["123"]
+      }
+    },
+    "httpResponse" : {
+      "body" : "{\"error\": \"user not found\"}",
+      "statusCode": 404
+    }
+  }
   ]
